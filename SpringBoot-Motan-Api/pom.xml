@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.51sole.jxyq123</groupId>
+		<artifactId>SpringBoot-Motan</artifactId>
+		<version>1.0</version>
+	</parent>
+
+	<artifactId>SpringBoot-Motan-Api</artifactId>
+	<name>SpringBoot-Motan-Api</name>
+	<url>http://maven.apache.org</url>
+
+	<!-- 编译版本 -->
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${maven-compiler.source}</source>
+					<target>${maven-compiler.target}</target>
+					<encoding>${maven.compiler.encoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+		<finalName>SpringBoot-Motan-Api</finalName>
+	</build>
+
+</project>

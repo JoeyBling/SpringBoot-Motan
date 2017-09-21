@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.51sole.jxyq123</groupId>
+		<artifactId>SpringBoot-Motan</artifactId>
+		<version>1.0</version>
+	</parent>
+
+	<artifactId>SpringBoot-Motan-Client</artifactId>
+	<name>SpringBoot-Motan-Client</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<motan.version>0.3.1</motan.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.51sole.jxyq123</groupId>
+			<artifactId>SpringBoot-Motan-Api</artifactId>
+			<version>${project-base.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-core</artifactId>
+			<version>${motan.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-transport-netty</artifactId>
+			<version>${motan.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-springsupport</artifactId>
+			<version>${motan.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-registry-zookeeper</artifactId>
+			<version>${motan.version}</version>
+		</dependency>
+	</dependencies>
+
+	<!-- 编译版本 -->
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${maven-compiler.source}</source>
+					<target>${maven-compiler.target}</target>
+					<encoding>${maven.compiler.encoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+		<finalName>SpringBoot-Motan-Client</finalName>
+	</build>
+</project>
