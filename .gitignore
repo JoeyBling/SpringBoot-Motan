@@ -22,6 +22,7 @@
 hs_err_pid*
 
 /.settings/
+/*/.settings/
 /target/
 /.svn/
 *.class
@@ -31,4 +32,3 @@ hs_err_pid*
 .classpath
 .project
 .DS_Store
-.settings
